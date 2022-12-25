@@ -5,7 +5,7 @@
 using namespace std;
 
 float fun(float x){
-    return (x*x*x + 3*x*x - 5);
+    return (3*x*x*x+2*x+2);
 }
 
 int main(){
@@ -20,8 +20,8 @@ int main(){
     int n = ceil((log10(b-a)-log10(e))/log10(2));
     cout<<"The minimum number of iterations required are : "<<n<<endl<<endl;
     int count=0;
-    cout<<setw(5)<<"i"<<setw(10)<<"a"<<setw(10)<<"b"<<setw(10)<<"mid"<<setw(10)<<"fmid"<<setw(10)<<endl;
-    cout<<"----------------------------------------------------"<<endl<<endl;
+    // cout<<setw(5)<<"i"<<setw(10)<<"a"<<setw(10)<<"b"<<setw(10)<<"mid"<<setw(10)<<"fmid"<<setw(10)<<endl;
+    // cout<<"----------------------------------------------------"<<endl<<endl;
     do{
         mid = (a+b)/2;
         if (fun(a)*fun(mid) > 0)
@@ -32,8 +32,9 @@ int main(){
             b = mid;
         }
         count++;
-        cout<<setw(5)<<count<<setw(10)<<a<<setw(10)<<b<<setw(10)<<mid<<setw(15)<<fun(mid)<<setw(10)<<endl;
+        // cout<<setw(5)<<count<<setw(10)<<a<<setw(10)<<b<<setw(10)<<mid<<setw(15)<<fun(mid)<<setw(10)<<endl;
         
-    }while((abs(fun(mid)) > e && count <= (2*n)));
+    }while((abs(fun(mid))>e && count<=(2*n)));
+    cout<<"The root is "<<mid;
     return 0;
-}
+} 
