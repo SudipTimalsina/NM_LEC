@@ -4,7 +4,7 @@ using namespace std;
 
 float calc(float x)
 {
-    return (x*x*x+3*x*x-5);
+    return (sin(x)+5);
 }
 
 int main()

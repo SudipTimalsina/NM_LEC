@@ -4,17 +4,17 @@ using namespace std;
 
 float calc(float x)
 {
-    return (x*log10(x)-1.2);
+    return (x*3-cos(x)-1);
 }
 float dcalc(float x)
 {
-    return (log10(x)+0.43429);
+    return (3+sin(x));
 }
 
 int main()
     {
         float a, b, c, e;
-        cout<<"Enter the interval (a,b) between whicn the ans is needed"<<endl;
+        cout<<"Enter the interval (a,b) between whicn the ans is required"<<endl;
         cin>>a>>b;
         cout<<"Enter the toloratable error "<<endl;
         cin>>e;
@@ -41,3 +41,4 @@ int main()
         cout<<"ans="<<c<<endl;
         return 0;
     }
+
