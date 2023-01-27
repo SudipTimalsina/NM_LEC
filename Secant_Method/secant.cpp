@@ -20,7 +20,7 @@ int main()
             count++;
             if(abs(calc(b)-calc(a))<e)
             {
-                cout<<"Math Error"<<endl;
+                cout<<"...Math Error..." <<endl;
                 return 1; 
             }
             if (count>20)
@@ -34,6 +34,6 @@ int main()
                 b=c;
             }
         }while(abs(calc(c)>e));
-        cout<<"ans="<<c<<endl;
+        cout<<"Ans="<<c<<endl;
         return 0;
     }
