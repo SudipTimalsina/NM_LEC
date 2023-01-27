@@ -10,11 +10,11 @@ float fun(float x){
 
 int main(){
     float a,b,e,mid;
-    cout<<"Enter the starting interval: "<<endl;
+    cout<<"Enter the starting interval: " <<endl;
     cin>>a;
     cout<<"Enter the final interval: "<<endl;
     cin>>b;
-    cout<<"What is the tolerable error? : "<<endl;
+    cout<<"What is the tolerable error? : " <<endl;
     cin>>e;
     cout<<endl;
     int n = ceil((log10(b-a)-log10(e))/log10(2));
