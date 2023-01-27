@@ -40,7 +40,7 @@ int main()
            }
        }
     }
-    cout<<"\nThe solutions are given below :"<<endl;
+    cout<<"\n The solutions are given below :"<<endl;
     float x[100];
     for(i=0;i<n;i++)
     {
