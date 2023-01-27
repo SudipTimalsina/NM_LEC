@@ -6,6 +6,7 @@ int main()
 {
     int n,i,j;
     float a[100][101];
+    float temp;
     cout<<"Enter the number of unknown variables :";
     cin>>n;
     cout <<"Enter the coefficients of varaible and argument in row wise :"<<endl;
@@ -25,13 +26,12 @@ int main()
     for(j=0;j<n;j++)
     {
         if(abs(a[j][j])<0.00005){
-            cout<<"Error"<<endl;
+            cout<<"\nError"<<endl;
             return 1;
         }
        for(i=0;i<n;i++)
        {
            if(i!=j){
-                float temp;
                 temp=a[i][j];
                for(int k=0;k<(n+1);k++)
                {
