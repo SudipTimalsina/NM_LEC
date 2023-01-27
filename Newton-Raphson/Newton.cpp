@@ -16,7 +16,7 @@ int main()
         float a, b, c, e;
         cout<<"Enter the interval (a,b) between whicn the ans is required"<<endl;
         cin>>a>>b;
-        cout<<"Enter the toloratable error "<<endl;
+        cout<<"Enter the toloratable error " <<endl;
         cin>>e;
         int count=0;
         float x0=((a+b)/2);
