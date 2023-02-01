@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-		 float a[SIZE][SIZE], x[SIZE], temp;
+		 float a[SIZE][SIZE], temp;
 		 int i,j,k,n;
 		 cout<<"Enter order of matrix: ";
 		 cin>>n;
