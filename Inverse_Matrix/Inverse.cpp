@@ -8,22 +8,26 @@ using namespace std;
 
 int main()
 {
-		 float a[SIZE][SIZE], temp;
+		 float a[SIZE][SIZE], x[SIZE], temp;
 		 int i,j,k,n;
+
+
 		 cout<<"Enter order of matrix: ";
 		 cin>>n;
+
 		 cout<<"Enter coefficients of Matrix: " << endl;
-		 for(i=0;i<n;i++)
+		 for(i=1;i<=n;i++)
 		 {
-			  for(j=0;j<n;j++)
+			  for(j=1;j<=n;j++)
 			  {
-				   cout<<"a["<< i+1<<"]"<< j+1<<"]= ";
+				   cout<<"a["<< i<<"]"<< j<<"]= ";
                    cin>>a[i][j];
 			  }
 		 }
-		 for(i=0;i<n;i++)
+
+		 for(i=1;i<=n;i++)
 		 {
-			  for(j=0;j<n;j++)
+			  for(j=1;j<=n;j++)
 			  {
 				   if(i==j)
 				   {
@@ -36,7 +40,6 @@ int main()
 			  }
 		 }
 
-		 /* Applying Gauss Jordan Elimination */
 		 for(i=1;i<=n;i++)
 		 {
 			  if(a[i][i] == 0.0)
@@ -49,13 +52,14 @@ int main()
 				   if(i!=j)
 				   {
 					    temp = a[j][i]/a[i][i];
-					    for(k=0;k<2*n;k++)
+					    for(k=1;k<=2*n;k++)
 					    {
 					     	a[j][k] = a[j][k] - temp*a[i][k];
 					    }
 				   }
 			  }
 		 }
+		 
 		 for(i=1;i<=n;i++)
 		 {
 			  for(j=n+1;j<=2*n;j++)
@@ -64,7 +68,7 @@ int main()
 			  }
 		 }
 		 cout<< endl<<"Inverse Matrix is:"<< endl;
-		 for(i=0;i<n;i++)
+		 for(i=1;i<=n;i++)
 		 {
 			  for(j=n+1;j<=2*n;j++)
 			  {
