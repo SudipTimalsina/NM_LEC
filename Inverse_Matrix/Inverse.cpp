@@ -3,14 +3,12 @@
 #include<stdlib.h>
 
 #define SIZE 10
-
 using namespace std;
 
 int main()
 {
 		 float a[SIZE][SIZE], x[SIZE], temp;
 		 int i,j,k,n;
-
 
 		 cout<<"Enter order of matrix: ";
 		 cin>>n;
